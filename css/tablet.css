@@ -52,9 +52,13 @@
   .project-section {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .project-info {
+    align-items: flex-start;
+  }
 
   .project-info-2 {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   /*DOWNSIZING FOOTER ICON*/
