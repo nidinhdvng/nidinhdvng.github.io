@@ -88,6 +88,10 @@
     align-items: flex-start;
   }
 
+  .project-info div {
+    margin: 5px 0 0 0;
+  }
+
   /* FOOTER DOWNSIZING*/
 
   .icon-facebook-circled,
