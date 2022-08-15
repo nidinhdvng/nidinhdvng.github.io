@@ -1,8 +1,10 @@
 @media screen and (max-width: 995px) {
+  /*HIDING AVATAR*/
   .avatar {
     display: none !important;
   }
 
+  /*NAVBAR*/
   #nav-bar .container div {
     padding: 10px 50px;
   }
@@ -15,11 +17,11 @@
     padding: 10px 50px;
   }
 
-  .name {
-    top: 40%;
-    left: 6%;
+  .role {
+    top: 65%;
   }
 
+  /*JOB INFO SECTION*/
   #job-info .container-fluid {
     grid-template-columns: 1fr 1fr;
   }
@@ -33,6 +35,8 @@
   .level {
     width: 20px;
   }
+
+  /*CERT SECTION*/
   .cert-card {
     display: grid;
     grid-template-columns: auto;
@@ -44,10 +48,16 @@
     padding: 10px 0;
   }
 
+  /*PROJECT SECTION*/
   .project-section {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .project-info-2 {
+    flex-direction: column;
+  }
+
+  /*DOWNSIZING FOOTER ICON*/
   .icon-facebook-circled,
   .icon-linkedin-circled,
   .icon-github-circled {
