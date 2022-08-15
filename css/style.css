@@ -1,17 +1,12 @@
+/*BASE SETTING*/
 * {
   margin: 0px;
   padding: 0;
   box-sizing: border-box;
 }
 
-.bg-grey {
-  background: #f7f7f7;
-}
-
 body {
-
   margin: 0 auto;
-
   font-family: sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -20,6 +15,14 @@ body {
 
 .text-grey {
   color: grey;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+.black-text {
+  color: black; /*FOR HEADING TEXT*/
 }
 
 /*BANNER*/
@@ -31,30 +34,20 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
+
+  /* MIDDLING NAME SECTION */
   top: 50%;
-  right: -44.5%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
-.name.role {
-  top:60%;
-  right: -46.5%;
+.role {
+  top: 60%;
 }
-
-.name span {
-  transform: translate(0.-50%);
-}
-
-/*MAKE TEXTS BLACK*/
-.black-text {
-  color: black;
-}
-
 
 section > .container {
-  /* width: 1170px; */
   margin: auto;
   display: block;
-
   padding: 30px 50px;
 }
 
@@ -63,12 +56,13 @@ section > .container {
 }
 
 /*TEXT ON IMG*/
-.banner-text h1, .banner-text span { 
+.banner-text h1,
+.banner-text span {
   position: absolute;
   color: white;
   top: 40%;
   right: 50%;
-  transform: translate(50%,50%);
+  transform: translate(50%, 50%);
   text-transform: uppercase;
 }
 
@@ -78,7 +72,6 @@ section > .container {
 .banner-text span {
   top: 55%;
 }
-
 
 /*NAV BAR*/
 #nav-bar .container {
@@ -124,7 +117,7 @@ section > .container {
 }
 
 #navbar {
-  position:relative;
+  position: relative;
 }
 
 .avatar {
@@ -149,9 +142,7 @@ section > .container {
 /*ABOUT SECTION*/
 #about .container-fluid {
   display: grid;
-  
   grid-template-columns: 50% 50%;
-
   align-items: top;
   justify-content: center;
   padding: 0;
@@ -174,7 +165,6 @@ section > .container {
 
 #personal-info ul li {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 #personal-info ul li span:first-child {
@@ -191,7 +181,7 @@ section > .container {
   padding: 30px 50px;
 }
 
-#target .section-title{
+#target .section-title {
   margin-top: 40px;
 }
 
@@ -218,7 +208,6 @@ section > .container {
   align-items: top;
   justify-items: left;
 }
-
 
 .job-info-card i {
   align-self: center;
@@ -273,7 +262,7 @@ section > .container {
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: space-around
+  justify-content: space-around;
   gap: 12px;
 }
 
@@ -319,13 +308,15 @@ section > .container {
 }
 
 .job-info-card {
-  height:fit-content;
+  height: fit-content;
 }
- .column-1, .column-2, .column-3 {
+.column-1,
+.column-2,
+.column-3 {
   display: flex;
   flex-direction: column;
   gap: 30px;
- }
+}
 
 /*Level*/
 .level {
@@ -344,51 +335,46 @@ section > .container {
   width: 45px;
 }
 
-
 /*LANGUAGE & SKILL*/
-.language-info, .skill-info {
+.language-info,
+.skill-info {
   display: flex;
   flex-direction: column;
   margin: 0 30px 50px 30px;
   gap: 20px;
 }
 
-
 /*CERT SECTION*/
 #certificate {
   margin: 50px 0;
   padding: 10px;
 }
-.cert-section{
+.cert-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-
-
 .cert-img {
-  max-width: 100%; height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .cert-card {
   display: grid;
   grid-template-columns: 40% 60%;
   padding: 20px 30px;
- 
 }
 
 .cert-card p:first-child {
- 
   text-transform: uppercase;
 }
 
-.cert-card:nth-child(even){
+.cert-card:nth-child(even) {
   border-left: 1px solid #d6c08d;
-  
 }
 
-.cert-card:nth-child(2), .cert-card:first-child {
- 
+.cert-card:nth-child(2),
+.cert-card:first-child {
   border-bottom: 1px solid #d6c08d;
 }
 
@@ -399,14 +385,14 @@ section > .container {
 /*PROJECT SECTION*/
 .project-section {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  
+  max-width: 100%;
 }
 
-
 .project-img {
-  max-width: 100%; height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .project-card {
@@ -416,31 +402,35 @@ section > .container {
   /* border-top: none; */
   align-items: center;
   justify-content: center;
-
-  max-width: 100%; height: auto;
- 
+  height: 100%;
 }
 
-.project-card div {
+.project-card > div {
   border-top: 1px solid lightgrey;
-  
 }
 
 .project-name {
   text-transform: uppercase;
   padding: 10px 20px;
-  height: 40px;
+  height: 100%;
+}
+
+.project-text {
+  border-top: 1px solid lightgrey;
+  padding: 10px;
 }
 
 .project-info {
-
-  padding: 10px 20px;
-  height: 40px;
+  padding: 5px 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.project-text{
-  border-top: 1px solid lightgrey;
-  padding: 10px;
+.project-info-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
 }
 
 td {
@@ -455,18 +445,12 @@ td {
   margin-right: 12px;
 }
 
-#project {
-  margin: 50px 0;
-  padding: 10px;
-}
-
 #project a:hover {
- color: #199cdb;
- transform: scale(1.05);
-  
+  color: #199cdb;
+  transform: scale(1.05);
 }
 
-/*FOOTER*/
+/*FOOTER SECTION*/
 
 #footer {
   padding: 20px 0;
@@ -481,22 +465,24 @@ td {
 }
 
 #footer .container-fluid ul li i {
-  color:#4dabf7;
+  color: #4dabf7;
 }
 
-#footer .container-fluid ul li a:link,  #footer .container-fluid ul li a:visited {
+#footer .container-fluid ul li a:link,
+#footer .container-fluid ul li a:visited {
   color: grey;
   text-decoration: none;
   cursor: pointer;
 }
 
-#footer .container-fluid ul li a:hover,  #footer .container-fluid ul li a:active {
+#footer .container-fluid ul li a:hover,
+#footer .container-fluid ul li a:active {
   font-weight: bold;
 }
 
-.icon-facebook-circled
-,.icon-linkedin-circled
-,.icon-github-circled {
+.icon-facebook-circled,
+.icon-linkedin-circled,
+.icon-github-circled {
   font-size: 36px;
 }
 
@@ -505,18 +491,12 @@ td {
   align-items: center;
 }
 
-
-
 .section-title {
   font-size: 30px;
   font-weight: 500;
 }
 
-
 /* BOOSTRAP OVERWRITING EDIT */
-ul{
+ul {
   padding-left: 0;
 }
- 
-
-
